@@ -1,22 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        var a = [{firstName: "name1", lastName: "name2"}, {firstName: "name3", lastName: "name4"}, {firstName: "name5", lastName: "name6"}];
-        var val1 = a.find(l => l.firstName === "name3");
-        console.log(val1);
-        if (val1) {
-            document.write("<table border='1'><tr><th>First Name</th><th>Last Name</th></tr>");
-            document.write("<tr><td>" + val1.firstName + "</td><td>" + val1.lastName + "</td></tr>");
-            document.write("</table>");
-        } else {
-            document.write("No match found.");
-        }
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
